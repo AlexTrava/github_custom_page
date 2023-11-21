@@ -1,20 +1,19 @@
 // import styles from './Header.module.css'
-import { useState, useRef, useContext, useCallback } from "react";
+import { useState, useRef, useCallback } from "react";
 import { debounce } from "lodash";
 import { useSelector, useDispatch } from "react-redux";
 import { setSearchValue } from "../../redux/slices/searchSlice";
+import logo from "../../../public/logo.svg";
 
 const Header = () => {
   const [value, setValue] = useState("");
-  const inputEl = useRef(null);
-  const searchValue = useSelector((state) => state.search.searchValue);
   const dispatch = useDispatch();
 
   const updateSearchValueTest = useCallback(
     debounce((str) => {
       dispatch(setSearchValue(str));
     }, 750),
-    [],
+    []
   );
 
   const onChangeInput = (e) => {
@@ -23,7 +22,7 @@ const Header = () => {
   };
   return (
     <div className="header_wrapper center">
-      <img src="../src/img/logo.svg" alt="logo" className="logo" />
+      <img src={logo} alt="logo" className="logo" />
       <form action="#" className="form_header">
         <input
           type="text"
