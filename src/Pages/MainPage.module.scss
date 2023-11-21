@@ -1,0 +1,248 @@
+/* Reset and base styles  */
+* {
+  padding: 0px;
+  margin: 0px;
+  border: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Links */
+
+a,
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* Common */
+
+aside,
+nav,
+footer,
+header,
+section,
+main {
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+ul,
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+img,
+svg {
+  max-width: 100%;
+  height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+/* Form */
+
+input,
+textarea,
+button,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button,
+input[type="submit"] {
+  display: inline-block;
+  box-shadow: none;
+  background-color: transparent;
+  background: none;
+  cursor: pointer;
+}
+
+input:focus,
+input:active,
+button:focus,
+button:active {
+  outline: none;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+label {
+  cursor: pointer;
+}
+
+legend {
+  display: block;
+}
+
+.center {
+  margin-left: calc(50% - 800px);
+  margin-right: calc(50% - 800px);
+}
+body {
+  background-color: #ececec47;
+}
+
+.header {
+  background-color: blue;
+}
+
+.header_wrapper {
+  padding: 10px 0;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+}
+
+.logo {
+  height: 50px;
+  width: 50px;
+}
+
+.header_input {
+  position: relative;
+  background-color: #fff;
+
+  border-radius: 10px;
+  padding: 10px 20px;
+  padding-left: 55px;
+  width: 700px;
+  font-size: 16px;
+  transition: all 0.15s ease;
+}
+
+.header_input:focus {
+  border: 3px solid rgba(72, 106, 201, 0.849);
+}
+
+.search_img {
+  width: 30px;
+  height: 38px;
+  opacity: 0.5;
+  position: absolute;
+  left: 235px;
+  top: 16px;
+  cursor: pointer;
+}
+
+/* middle content */
+
+.middle_content {
+  display: flex;
+  padding-top: 30px;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.profile_card {
+  width: 400px;
+  height: 600px;
+}
+
+.profile_img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+}
+
+.profile_name {
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.profile_link {
+  font-size: 20px;
+}
+
+.profile_link:visited {
+  color: blue;
+}
+
+.profile_info {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.followers {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.following {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.info_repos {
+  height: 600px;
+}
+
+.h_repositories {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.quantity_repos {
+  margin-top: 20px;
+  background-color: #ececec47;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.card_repos {
+  width: 900px;
+  padding: 20px 20px;
+  background-color: #fff;
+}
+
+.link_repos {
+  font-size: 40px;
+}
+
+.title_repos {
+  padding-top: 20px;
+  font-size: 30px;
+}

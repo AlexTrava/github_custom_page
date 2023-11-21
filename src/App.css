@@ -3,6 +3,7 @@
   padding: 0px;
   margin: 0px;
   border: none;
+  font-family: "Nunito";
 }
 
 *,
@@ -156,7 +157,7 @@ body {
   height: 38px;
   opacity: 0.5;
   position: absolute;
-  left: 235px;
+  left: 245px;
   top: 16px;
   cursor: pointer;
 }
@@ -245,4 +246,46 @@ body {
 .title_repos {
   padding-top: 20px;
   font-size: 30px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+  background: #ffffff;
+}
+
+.pagination a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.8rem;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+.pagination a:hover {
+  color: #2556df;
+}
+
+.pagination .active {
+  color: #ffffff;
+  background: #2556df;
+  font-weight: 600;
+  border: 1px solid #2556df;
+}
+
+.welcome_block {
+  text-align: center;
+  margin-top: 15%;
+}
+
+.welocme_img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+.welcome_text {
+  color: gray;
+  font-size: 20px;
 }
